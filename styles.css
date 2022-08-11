@@ -105,9 +105,7 @@ main {
 }
 
 .warframe > div:nth-child(2) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
   border: 5px solid #ad60f5;
   animation: rotate 1.5s linear infinite !important;
 }
@@ -123,6 +121,13 @@ main {
   border-left: 5px solid #ad60f5;
   transform: rotate(45deg);
   animation: shrink 1.5s linear infinite !important;
+}
+
+.warframe > div:nth-child(4) {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: #000;
 }
 
 @keyframes spin {
